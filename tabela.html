@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Procesory</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            border: 5px solid orange; /* Pomarańczowe obramowanie */
+        }
+        th, td {
+            border: 1px solid orange;
+            padding: 10px;
+            font-weight: bold;
+            font-style: italic;
+
+        }
+        .large-cell {
+            height: 60px; /* Zwiększona wysokość tylko dla określonych komórek */
+            font-size: 1.2em; /* Powiększona czcionka */
+        }
+        .model-header-cell {
+            background-color: #b6d7a8; /* Jasno zielone tło */
+            color: #000000; /* Czarny tekst */
+        }
+        .header {
+            background-color: #ffe599; /* Jasno żółte tło */
+        }
+        .highlight {
+            color: red;
+        }
+        .row1 td {
+            background-color: #0b5394; /* Ciemnoniebieskie tło */
+            color: #ffffff; /* Biały tekst */
+        }
+        .row2 td {
+            background-color: #e0f7ff; /* Jasnozielone */
+            color: #008000; /* Zielony tekst */
+        }
+        .row3 td {
+            background-color: #990000; /* Ciemnoczerwone */
+            color: #ffffff; /* Biały tekst */
+        }
+        .row4 td {
+            background-color: #cfe2f3; /* Jasnoniebieskie */
+            color: #000000; /* Czarny tekst */
+        }
+        .row5 td {
+            background-color: #d9ead3; /* Bardzo jasna zieleń */
+            color: #000000; /* Czarny tekst */
+        }
+        .row6 td {
+            background-color: #f4cccc; /* Jasnoróżowe */
+            color: #000000; /* Czarny tekst */
+        }
+        .row7 td {
+            background-color: #d9d9d9; /* Szare */
+            color: #000000; /* Czarny tekst */
+        }
+        th {
+            color: #ffffff; /* Biały tekst */
+        }
+        .title-cell {
+            background-color: #808080; /* Ciemnoszare */
+            color: #6fa8dc; /* Jasnoniebieski */
+            font-size: 1.8em; /* Większy tekst */
+        }
+        .merged-cell {
+            background-color: #e0f7ff; /* Jasnoniebieskie */
+            color: red; /* Czerwony tekst */
+            font-size: 1.5em;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th colspan="6" class="title-cell">PROCESORY – FILIP GAJEWSKI 2F</th>
+        </tr>
+        <tr class="header">
+            <th  class="model-header-cell">Model Procesora</th>
+            <th style="background-color: #fce5cd; color: #800080;">Taktowanie Procesora</th>
+            <th style="background-color: #000000; color: yellow;">TDP Procesora</th>
+            <th style="background-color: #ffffff; color: #38761d;">Typ Gniazda</th>
+            <th style="background-color: #d9ead3; color: #FFA500;">Liczba Rdzeni</th>
+            <th style="background-color: #cfe2f3; color: #0b5394;">Chłodzenie dołączone w zestawie?</th>
+        </tr>
+        <tr class="row1">
+            <td style="background-color: #0b5394; color: #FFA500;">i7-14700K</td>
+            <td style="background-color: #0b5394; color: #FFA500;">3400 MHz</td>
+            <td style="background-color: #0b5394; color: #FFA500;">125 W</td>
+            <td style="background-color: #0b5394; color: #FFA500;">Socket 1700</td>
+            <td style="background-color: #0b5394; color: #FFA500;">20</td>
+               <td rowspan="7" class="merged-cell" style="background-color: #e0f7ff; color: red;">TAK</td>
+        </tr>
+        <tr class="row2">
+            <td>AMD Ryzen 7 7800X3D</td>
+            <td>4200 MHz</td>
+            <td>120 W</td>
+            <td>Socket AM5</td>
+            <td>8</td>
+        </tr>
+        <tr class="row3">
+            <td style="background-color: #0b5394; color: #990000;">AMD Ryzen 5 5600X</td>
+            <td style="background-color: #0b5394; color: #990000;">3700 MHz</td>
+            <td style="background-color: #0b5394; color: #990000;">65 W</td>
+            <td style="background-color: #0b5394; color: #990000;">Socket AM4</td>
+            <td style="background-color: #0b5394; color: #990000;">6</td>
+        </tr>
+        <tr class="row4">
+            <td style="background-color: #a9a9a9; color: #6fa8dc;">i5-12400F</td>
+            <td style="background-color: #a9a9a9; color: #6fa8dc;">2500 MHz</td>
+            <td style="background-color: #a9a9a9; color: #6fa8dc;">65 W</td>
+            <td style="background-color: #a9a9a9; color: #6fa8dc;">Socket 1700</td>
+            <td style="background-color: #a9a9a9; color: #6fa8dc;">6</td>
+        </tr>
+        <tr class="row5">
+            <td style="color: #800080;">i9-14900K</td>
+            <td style="color: #800080;">3200 MHz</td>
+            <td style="color: #800080;">125 W</td>
+            <td style="color: #800080;">Socket 1700</td>
+            <td style="color: #800080;">24</td>
+        </tr>
+        <tr class="row6">
+            <td style="background-color: #FF1493; color: #006400;">AMD Ryzen 5 7600</td>
+            <td style="background-color: #FF1493; color: #006400;">3800 MHz</td>
+            <td style="background-color: #FF1493; color: #006400;">65 W</td>
+            <td style="background-color: #FF1493; color: #006400;">Socket AM5</td>
+            <td style="background-color: #FF1493; color: #006400;">6</td>
+        </tr>
+        <tr class="row7">
+            <td style="background-color: #d1ecf1; color: #333333;">i3-12100F</td>
+            <td style="background-color: #d1ecf1; color: #333333;">3300 MHz</td>
+            <td style="background-color: #d1ecf1; color: #333333;">58 W</td>
+            <td style="background-color: #d1ecf1; color: #333333;">Socket 1700</td>
+            <td style="background-color: #d1ecf1; color: #333333;">4</td>
+        </tr>
+    </table>
+    <p style="text-align: right;">Źródło: Komputronik</p>
+</body>
+</html>
+
+
+
+
+

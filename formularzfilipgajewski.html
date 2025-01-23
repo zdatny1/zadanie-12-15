@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularz Rejestracji</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #add8e6;  
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            text-align: center;
+            font-size: 24px;
+            margin: 20px 0;
+        }
+        form {
+            width: 1200px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border: 2px solid #000;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .column {
+            flex: 1;
+            margin-right: 20px;
+        }
+        .column:last-child {
+            margin-right: 0;
+        }
+        label {
+            font-weight: bold;
+            margin-bottom: 8px;
+            display: block;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #000;
+            box-sizing: border-box;
+        }
+        input[type="checkbox"], input[type="radio"] {
+            width: auto;
+            margin-right: 10px;
+            transform: scale(1.3);
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        button {
+            padding: 10px 30px;
+            font-size: 16px;
+            border: 2px solid #000;
+            cursor: pointer;
+            background-color: #fff;
+        }
+        button:hover {
+            background-color: #ccc;
+        }
+        textarea {
+            resize: none;
+            height: 80px;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formularz rejestracji na wydarzenie sportowe</h1>
+    <form>
+
+
+
+        <div class="row">
+            <div class="column">
+                <label for="imie">Imię:</label>
+                <input type="text" id="imie" name="imie">
+            </div>
+            <div class="column">
+                <label for="nazwisko">Nazwisko:</label>
+                <input type="text" id="nazwisko" name="nazwisko">
+            </div>
+            <div class="column">
+                <label for="pesel">PESEL:</label>
+                <input type="text" id="pesel" name="pesel">
+            </div>
+            <div class="column">
+                <label for="adres">Adres zamieszkania:</label>
+                <input type="text" id="adres" name="adres">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="column">
+                <label for="telefon">Numer telefonu:</label>
+                <input type="text" id="telefon" name="telefon">
+            </div>
+            <div class="column">
+                <label for="grupa">Nazwa drużyny (max 20 znaków, max 3 osoby):</label>
+                <input type="text" id="grupa" name="grupa">
+            </div>
+        </div>
+
+        <div class="buttons">
+            <button type="submit">Potwierdź</button>
+            <button type="reset">Anuluj</button>
+        </div>
+
+        
+        <div class="section">
+            <label>Wybierz kategorię:</label>
+            <label><input type="radio" name="kategoria" value="dorosli"> Dorośli</label>
+            <label><input type="radio" name="kategoria" value="mlodziez"> Młodzież (od lat 12)</label>
+            <label><input type="radio" name="kategoria" value="dzieci"> Dzieci (do lat 12)</label>
+            <label><input type="radio" name="kategoria" value="seniorzy"> Seniorzy (od lat 65)</label>
+        </div>
+
+        <!-- Zainteresowania -->
+        <div class="grid-container">
+            <div class="section">
+                <label>Zaznacz swoje zainteresowania:</label>
+                <label><input type="checkbox"> Sport</label>
+                <label><input type="checkbox"> Muzyka</label>
+                <label><input type="checkbox"> Podróże</label>
+                <label><input type="checkbox"> Książki</label>
+            </div>
+
+            <div class="section">
+                <label>Wybierz dyscyplinę, w której chcesz startować:</label>
+                <select>
+                    <option>Siatkówka</option>
+                    <option>Koszykówka</option>
+                    <option>Piłka nożna</option>
+                    <option>Lekkoatletyka</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Kiedy uprawiasz sport -->
+        <div class="section">
+            <label>Kiedy najbardziej lubisz uprawiać sport:</label>
+            <label><input type="checkbox"> 1. Rano</label>
+            <label><input type="checkbox"> 2. Wieczorem</label>
+            <label><input type="checkbox"> 3. W nocy</label>
+            <label><input type="checkbox"> 4. Po południu</label>
+        </div>
+
+        <!-- Lokalizacja i dni uczestnictwa -->
+        <div class="grid-container">
+            <div class="section">
+                <label>Wybierz lokalizację wydarzenia:</label>
+                <select>
+                    <option>Warszawa</option>
+                    <option>Kraków</option>
+                    <option>Poznań</option>
+                    <option>Gdańsk</option>
+                </select>
+            </div>
+
+            <div class="section">
+                <label>Wybierz dni uczestnictwa:</label>
+                <label><input type="checkbox" checked> Poniedziałek</label>
+                <label><input type="checkbox"> Wtorek</label>
+                <label><input type="checkbox" checked> Piątek</label>
+                <label><input type="checkbox"> Sobota</label>
+            </div>
+        </div>
+
+        <div class="grid-container">
+            <div class="section">
+                <label>Wybierz rodzaj posiłku:</label>
+                <select>
+                    <option>Wegetariański</option>
+                    <option>Mięsny</option>
+                    <option>Wegański</option>
+                    <option>Bezglutenowy</option>
+                </select>
+            </div>
+
+            <div class="section">
+                <label>Czy masz jakieś uwagi?</label>
+                <textarea placeholder="Tak mam..."></textarea>
+            </div>
+        </div>
+
+      
+        <div class="section">
+            <label>Wybierz formę płatności:</label>
+            <label><input type="radio" name="platnosc"> Gotówka</label>
+            <label><input type="radio" name="platnosc"> Karta płatnicza</label>
+            <label><input type="radio" name="platnosc"> Przelew</label>
+        </div>
+
+        <div class="buttons">
+            <button type="submit">Wyślij</button>
+            <button type="reset">Czyść</button>
+        </div>
+    </form>
+</body>
+</html>
+
+
+

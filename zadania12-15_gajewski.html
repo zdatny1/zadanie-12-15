@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="sortcut icon" href="logo1_gajewski.png">
+<title>główny Filip Gajewski</title>
+ 
+</head>
+<script>
+    window.onload = function() {
+        if (localStorage.getItem('visitCount')) {
+            var count = parseInt(localStorage.getItem('visitCount')) +1;
+            localStorage.setItem('visitCount', count);
+        } else {
+            localStorage.setItem('visitCount', 1);
+        }
+
+        updateCounter();
+    };
+    function updateCounter() {
+        var count = localStorage.getItem('visitCount');
+        document.getElementById('counter').innerHTML = 'Liczba odwiedzeń: ' + count;
+    }
+</script>
+<body bgcolor="orange">
+<table width=65% border="1" align="center">
+    <tr>
+        <td colspan="3" align="center">
+            <iframe scrolling="no" width=625 height=350 name="logo_Gajewski" src="logo_gajewski.png" border="0"></iframe>
+
+        </td>
+    </tr>
+
+
+    <tr>
+        <td width=18% align="center">
+            <b>Lewe menu</b>
+            <ul>
+                <li>  <a href="start_gajewski.html" target="glowny_gajewski">Powrót </a></li>
+                <li><a href="https://zse.edu.gdansk.pl/pl" target="glowny_gajewski">Strona ZSE</a></li>
+                <li><a href="https://www.kuratorium.gda.pl/" target="glowny_gajewski">Kuratorium</a></li>
+                <li><a href="https://www.flashscore.pl/mecz/27Nfj1tR/#/szczegoly-meczu/szczegoly-meczu" target="glowny_gajewski">derby dla Lechii</a></li>
+                <li><a href="https://fortnitetracker.com/profile/all/demencjusz%20fv/events" target="glowny_gajewski">Stona fortnite tracker </a></li>
+<p id="counter">Licznik odwiedzeń: 0</p>
+            </ul>
+        </td>
+
+
+        <td align=center>
+            <iframe scrolling="no" width=650 height=420 name="glowny_gajewski" src="start_gajewski.html" border="0"></iframe>
+            <b></b>
+        </td>
+
+
+        <td width=18% align="center">
+            <b>Prawe menu</b>
+            <ul>
+                <li>
+                    <a href="plik_Gajewski.html" target="glowny_gajewski"> <img src="trojkat_gajewski.png" height="130" width="156"/></a>
+
+                </li>
+                <li>
+                    <a href="tabela.html" target="glowny_gajewski"><img src="prostokat_gajewski.png"height="130" width="212"/> </a>
+                </li>
+                <li>
+                    <a href="formularzfilipgajewski.html" target="glowny_gajewski"> <img src="trojkatzolty_gajewski.png" height="128" width="130"/></a>
+                </li>
+                <li>
+                    <a href="poczta_Gajewski.html" target="glowny_gajewski"> <img src="okrag_gajewski.png" height="130" width="200"/></a>
+                </li>
+                <li>
+                    <a href="https://zdatny1.github.io/sprawdzian/"target="glowny_gajewski"> <img src="prostokatbrazowy.png" height="125" width="200"/></a>
+                </li>
+            </ul>
+        </td>
+        </td>
+    </tr>
+
+
+    <tr>
+        <td colspan="3" align="center">
+            <iframe scrolling="no" width=900 height=90 name="obszar_stopka" src="stopka_gajewski.html" border="0"></iframe>
+
+
+        </td>
+    </tr>
+
+</table>
+</body>
+</html>
